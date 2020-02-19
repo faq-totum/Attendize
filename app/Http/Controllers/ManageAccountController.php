@@ -231,10 +231,17 @@ class ManageAccountController extends MyBaseController
         $latestVersion = null;
 
         try {
-            $http_client = new Client();
+            /**
+             * @FabDan override: closing potential XSS
+             */
+            #$http_client = new Client();
+            #$response = $http_client->get('https://attendize.com/version.php');
+            #$latestVersion = (string)$response->getBody();
 
-            $response = $http_client->get('https://attendize.com/version.php');
-            $latestVersion = (string)$response->getBody();
+            $latestVersion = '1.3.0';
+            /**
+             * End of @FabDan override: closing potential XSS
+             */
             $installedVersion = file_get_contents(base_path('VERSION'));
         } catch (\Exception $exception) {
             return false;
