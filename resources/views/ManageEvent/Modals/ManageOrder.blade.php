@@ -193,7 +193,7 @@
                                     <td>
                                     </td>
                                     <td>
-                                        <b>Total</b>
+                                        <b>@lang("Order.total")</b>
                                     </td>
                                     <td colspan="2">
                                         {{ $orderService->getGrandTotal(true) }}
