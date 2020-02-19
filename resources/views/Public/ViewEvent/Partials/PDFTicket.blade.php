@@ -40,7 +40,7 @@
             .ticket h4 {color: {{$event->ticket_text_color}} !important;}
             .ticket .logo {
                 border-left: 1px solid {{$event->ticket_border_color}} !important;
-                border-bottom: 1px solid {{$event->ticket_border_color}} !important;
+                border-bottom: none !important;
             }
             .ticket .barcode {
                 border-right: 1px solid {{$event->ticket_border_color}} !important;
