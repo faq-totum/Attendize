@@ -1,9 +1,9 @@
 <?php
 
 return [
-
+    'tmppath'     => '/var/www/html/storage/tmp/',
     'debug'       => env('APP_DEBUG_PDF', false),
-    'binpath'     => 'lib/',
-    'binfile'     => env('WKHTML2PDF_BIN_FILE', 'wkhtmltopdf-amd64'),
+    'binpath'     => '/usr/bin/',
+    'binfile'     => 'xvfb-wkhtmltopdf',
     'output_mode' => 'I',
 ];
