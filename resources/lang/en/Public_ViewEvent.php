@@ -86,5 +86,7 @@ return [
   'your_information' => 'Your information',
   'your_message' => 'Your message',
   'your_name' => 'Your name',
-  'your' => 'Your'
+  'your' => 'Your',
+  'stripe_credit_or_debit_card' => 'Credit or debit card',
+  'complete_payment' => 'Complete Payment',
 ];
