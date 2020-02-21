@@ -54,7 +54,8 @@ body.organiser #header .home-menu {
 }
 
 body.organiser .event-list>li>.info {
-    height: 130px;
+    height: 100%;
+    background: #fff;
 }
 
 body.organiser .event-listing-heading {
@@ -80,9 +81,9 @@ body.organiser .event-list > li > time {
 
 body.organiser .event-list>li>time {
     display: inline-block;
-    width: 100%;
+    width: 15%;
     padding: 5px;
-    text-align: left !important;
+    text-align: center !important;
     text-transform: uppercase;
 }
 
