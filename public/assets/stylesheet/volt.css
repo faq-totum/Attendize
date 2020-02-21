@@ -65,6 +65,31 @@ body.organiser .event-list {
     margin-bottom: 25px;
 }
 
+body.organiser .event-list > li > time {
+    color: #582c83;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+body.organiser .event-list>li>time {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    text-align: left !important;
+    text-transform: uppercase;
+}
+
+body.organiser .event-list>li>.info h2 {
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+body.organiser .event-list>li>.info>.desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+
 body.organiser .event-list>li>.info>ul>li {
     padding: 6px 0;
 }
