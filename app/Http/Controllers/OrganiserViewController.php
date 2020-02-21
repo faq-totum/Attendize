@@ -18,7 +18,7 @@ class OrganiserViewController extends Controller
      * @param bool $preview
      * @return \Illuminate\Contracts\View\View
      */
-    public function showOrganiserHome(Request $request, $organiser_id = 1, $slug = '', $preview = false)
+    public function showOrganiserHome(Request $request, $organiser_id, $slug = '', $preview = false)
     {
         $organiser = Organiser::findOrFail($organiser_id);
 
