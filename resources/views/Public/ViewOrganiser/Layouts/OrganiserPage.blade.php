@@ -25,9 +25,31 @@
         <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;display=swap">
         <style>
 
+            body {
+                padding-top: 75px;
+            }
+
             h1 {
                 font-size: 38px;
                 color: #582c83;
+            }
+
+            #header {
+                height: 75px;
+                background-color: #582c83;
+                padding-top: 24px;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+
+            #header .home-menu {
+                float: right;
+                color: #fff;
+                font-size: 16px;
+                line-height: 28px;
             }
 
             .event-list>li>.info {
@@ -47,17 +69,33 @@
             }
 
             .event-list>li>.info>ul>li,
+            .event-list>li>.info>ul>li:hover,
             .event-list>li>.info>ul>li>a {
                 background-color: #582c83;
                 color: #fff;
             }
 
+            footer {
+                height: 100%;
+                background-color: #582c83;
+            }
+
+            footer a, footer a:hover {
+                color: #fff;
+                text-decoration: underline;
+                font-weight: 100;
+                line-height: 28px;
+            }
+
             footer .navigation {
-                width: 100%;
                 display: block;
                 text-align: left;
-                font-family: Ubuntu,sans-serif;
                 line-height: 28px;
+                font-size: 16px;
+            }
+
+            footer .navigation > a {
+                display: block;
                 font-size: 16px;
             }
         </style>
