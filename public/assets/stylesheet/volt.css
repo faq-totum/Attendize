@@ -9,6 +9,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
     letter-spacing: initial;
 }
 
+#footer {
+    font-size: 12px;
+}
+
 /**
  * Organiser page
  */
@@ -17,8 +21,11 @@ body.organiser {
 }
 
 body.organiser h1 {
-    font-size: 38px;
     color: #582c83;
+}
+
+body.organiser #events > h1 {
+    font-size: 38px;
 }
 
 body.organiser #header {
@@ -64,7 +71,7 @@ body.organiser .event-list>li>.info>ul>li>a {
 
 body.organiser footer {
     height: 100%;
-    background-color: #582c83;
+    background-color: #582c83 !important;
 }
 
 body.organiser footer a, footer a:hover {
@@ -91,4 +98,15 @@ body.organiser footer .navigation h3 {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 18px;
+    padding-top: 40px;
+}
+
+/**
+ * Event page
+ */
+#event_page_wrap #organiser,
+#event_page_wrap .event_organiser_details .logo,
+#event_page_wrap .event_organiser_details > h3,
+#event_page_wrap .event_organiser_details > p[property="description"] {
+    display: none;
 }
