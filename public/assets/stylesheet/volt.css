@@ -65,10 +65,17 @@ body.organiser .event-list {
     margin-bottom: 25px;
 }
 
+body.organiser .event-list>li {
+    background-color: #fff;
+    margin: 0 0 20px;
+    border: 1px solid #582c83;
+}
+
 body.organiser .event-list > li > time {
     color: #582c83;
     background-color: #ffffff;
     height: 100%;
+    padding-left: 10px;
 }
 
 body.organiser .event-list>li>time {
