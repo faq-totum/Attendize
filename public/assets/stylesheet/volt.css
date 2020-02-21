@@ -8,6 +8,11 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
     font-family: Ubuntu, sans-serif;
 }
 
+.btn-primary, .btn-success.disabled, .btn-success[disabled], fieldset[disabled] .btn-success, .btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, .btn-success.disabled:active, .btn-success[disabled]:active, fieldset[disabled] .btn-success:active, .btn-success.disabled.active, .btn-success[disabled].active, fieldset[disabled] .btn-success.active, .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-color: #582c83;
+    border-color: #582c83;
+}
+
 .section_head {
     letter-spacing: initial;
 }
@@ -169,7 +174,7 @@ body.organiser footer .navigation h3 {
 }
 
 #event_page_wrap .event_organiser_details .logo {
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 #event_page_wrap a.go-back {
