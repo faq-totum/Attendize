@@ -70,5 +70,7 @@
             </div>
         </div>
     </div>
+
+    <a class="go-back" href="{{route('showOrganiserHome', [$event->organiser->id, Str::slug($event->organiser->name)])}}">torna alla lista eventi</a>
 </section>
 

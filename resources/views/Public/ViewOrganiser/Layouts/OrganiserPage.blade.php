@@ -22,8 +22,6 @@
         {!!HTML::style('assets/stylesheet/frontend.css')!!}
         {!!HTML::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/volt.css')!!}
         @yield('head')
-
-        <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;display=swap">
     </head>
     <body class="attendize organiser">
         @include('Shared.Partials.FacebookSdk')
