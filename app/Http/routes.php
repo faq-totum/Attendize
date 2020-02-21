@@ -709,9 +709,14 @@ Route::group(
         });
     });
 
-    Route::get('/', [
+    Route::get('/admin', [
         'as'   => 'index',
         'uses' => 'IndexController@showIndex',
+    ]);
+
+    Route::get('/', [
+        'as'   => 'showOrganiserHome',
+        'uses' => 'OrganiserViewController@showOrganiserHome',
     ]);
 });
 
