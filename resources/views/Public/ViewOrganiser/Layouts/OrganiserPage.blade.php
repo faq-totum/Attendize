@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--
-                  _   _                 _ _
-             /\  | | | |               | (_)
-            /  \ | |_| |_ ___ _ __   __| |_ _______   ___ ___  _ __ ___
-           / /\ \| __| __/ _ \ '_ \ / _` | |_  / _ \ / __/ _ \| '_ ` _ \
-          / ____ \ |_| ||  __/ | | | (_| | |/ /  __/| (_| (_) | | | | | |
-         /_/    \_\__|\__\___|_| |_|\__,_|_/___\___(_)___\___/|_| |_| |_|
-
-        -->
-        <title>{{{$organiser->name}}} - Attendize.com</title>
-
+        <title>{{{$organiser->name}}}</title>
 
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
-
 
         <!-- Open Graph data -->
         <meta property="og:title" content="{{{$organiser->name}}}" />
@@ -32,15 +21,52 @@
 
        {!!HTML::style('assets/stylesheet/frontend.css')!!}
         @yield('head')
+
+        <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;display=swap">
+        <style>
+
+            h1 {
+                font-size: 38px;
+                color: #582c83;
+            }
+
+            .event-list>li>.info {
+                height: 130px;
+            }
+
+            .event-listing-heading {
+                margin-top: 25px;
+            }
+
+            .event-list {
+                margin-bottom: 25px;
+            }
+
+            .event-list>li>.info>ul>li {
+                padding: 6px 0;
+            }
+
+            .event-list>li>.info>ul>li,
+            .event-list>li>.info>ul>li>a {
+                background-color: #582c83;
+                color: #fff;
+            }
+
+            footer .navigation {
+                width: 100%;
+                display: block;
+                text-align: left;
+                font-family: Ubuntu,sans-serif;
+                line-height: 28px;
+                font-size: 16px;
+            }
+        </style>
     </head>
     <body class="attendize">
         @include('Shared.Partials.FacebookSdk')
         <div id="organiser_page_wrap">
             @yield('content')
         </div>
-
-        <a href="#intro" style="display:none;" class="totop"><i class="ico-angle-up"></i>
-            <span style="font-size:11px;">@lang("basic.TOP")</span></a>
 
         @include("Shared.Partials.LangScript")
         {!!HTML::script('assets/javascript/frontend.js')!!}

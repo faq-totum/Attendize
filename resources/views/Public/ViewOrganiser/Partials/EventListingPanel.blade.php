@@ -31,7 +31,7 @@
                 @endforeach
             @else
                 <div class="alert alert-info">
-                    @lang("Public_ViewOrganiser.no_events", ["panel_title"=>$panel_title])
+                    @lang("Public_ViewOrganiser.no_events", ["panel_title"=> strtolower($panel_title)])
                 </div>
             @endif
 
