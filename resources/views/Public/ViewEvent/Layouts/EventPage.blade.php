@@ -34,7 +34,8 @@
         <![endif]-->
         @yield('head')
 
-       {!!HTML::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/frontend.css')!!}
+        {!!HTML::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/frontend.css')!!}
+        {!!HTML::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/volt.css')!!}
 
         <!--Bootstrap placeholder fix-->
         <style>

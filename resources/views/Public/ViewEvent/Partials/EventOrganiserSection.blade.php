@@ -5,6 +5,8 @@
                 <div class="logo">
                     <img alt="{{$event->organiser->name}}" src="{{asset($event->organiser->full_logo_path)}}" property="logo">
                 </div>
+                <h1 class="section_head">Entra in contatto</h1>
+                <h3 style="display: none;">
                     @if($event->organiser->enable_organiser_page)
                     <a href="{{route('showOrganiserHome', [$event->organiser->id, Str::slug($event->organiser->name)])}}" title="Organiser Page">
                         {{$event->organiser->name}}
@@ -14,7 +16,7 @@
                     @endif
                 </h3>
 
-                <p property="description">
+                <p property="description" style="display: none;">
                     {!! nl2br($event->organiser->about)!!}
                 </p>
                 <p>
