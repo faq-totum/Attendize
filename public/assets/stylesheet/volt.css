@@ -77,7 +77,7 @@ body.organiser .event-list {
     margin-bottom: 25px;
 }
 
-body.organiser .event_list .info .title a, body.organiser .event_list .info .title a:focus, body.organiser .event_list .info .title a:hover, body.organiser .event_list .info .title a:active, body.organiser .event_list .info .title a:visited {
+body.organiser .event-list .info .title a, body.organiser .event-list .info .title a:focus, body.organiser .event-list .info .title a:hover, body.organiser .event-list .info .title a:active, body.organiser .event-list .info .title a:visited {
     color: #582c83;
 }
 
