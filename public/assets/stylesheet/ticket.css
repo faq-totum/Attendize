@@ -116,7 +116,8 @@
     border-top: none;
     border-right: none;
     border-bottom: none !important;
-    padding: 30px;
+    background-color: #582c83;
+    padding: 20px;
     text-align: center;
 }
 

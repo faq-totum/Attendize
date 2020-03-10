@@ -132,18 +132,13 @@ var checkinApp = new Vue({
                     facingMode: 'environment'
                 },
                 audio: false
-            }, function (stream) {
-
+            }).then(function (stream) {
                 that.stream = stream;
-
                 if (that.videoElement.mozSrcObject !== undefined) { // works on firefox now
                     that.videoElement.mozSrcObject = stream;
-                } else if(window.URL) { // and chrome, but must use https
+                } else {
                     that.videoElement.srcObject = stream;
-                };
-
-            }, function () { /* error*/
-                alert(lang("checkin_init_error"));
+                }
             });
 
             this.isInit = true;
